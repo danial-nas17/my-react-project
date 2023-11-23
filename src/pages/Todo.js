@@ -3,6 +3,7 @@ import { TodoContext } from '../component/context/TodoContext'
 import "./todo.css"
 import FilterTodos from '../component/todos/FilterTodos';
 import CreateTodos from '../component/todos/CreateTodos';
+import UpdateTodo from '../component/todos/UpdateTodo';
 
 
 
@@ -39,11 +40,9 @@ function Todo() {
                     <div key={todo.id} className="col-md-8 d-flex justify-content-between ali align-items-center  dani">
                        <div className='dani2'>{todo.completed ? <del>{todo.title}</del> : <span>{todo.title}</span>}</div> 
                        <div className="d-flex align-items-center p-2">
-                            {todo.completed ?
-                            <i className="bi bi-check-all"></i> 
-                            : 
-                            <i className="bi bi-check"></i>
-                             }
+                            
+                        <UpdateTodo todo={todo}/>
+
                              <i className="bi bi-trash-fill"></i>
                        </div>
                     </div>
