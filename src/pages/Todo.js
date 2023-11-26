@@ -4,6 +4,7 @@ import "./todo.css"
 import FilterTodos from '../component/todos/FilterTodos';
 import CreateTodos from '../component/todos/CreateTodos';
 import UpdateTodo from '../component/todos/UpdateTodo';
+import RemoveTodo from '../component/todos/RemoveTodo';
 
 
 
@@ -38,12 +39,12 @@ function Todo() {
             
                 {todos && todos.map(todo => (
                     <div key={todo.id} className="col-md-8 d-flex justify-content-between ali align-items-center  dani">
-                       <div className='dani2'>{todo.completed ? <del>{todo.title}</del> : <span>{todo.title}</span>}</div> 
+                       <div className='dani2'>{todo.completed ? <del style={{color: '#F875AA'}}>{todo.title}</del> : <span>{todo.title}</span>}</div> 
                        <div className="d-flex align-items-center p-2">
                             
                         <UpdateTodo todo={todo}/>
-
-                             <i className="bi bi-trash-fill"></i>
+                        <RemoveTodo todoId={todo.id}/>
+                            
                        </div>
                     </div>
                 ))}
