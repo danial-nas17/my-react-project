@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { TodoContext } from '../context/TodoContext';
-import Swal from 'sweetalert2';
+import './todos.css'
 
 function CreateTodos() {
     const [todo , setTodo] = useState('');

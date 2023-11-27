@@ -1,0 +1,12 @@
+.btn{
+    background-color: #087f5b !important;
+    color: #e6fcf5 !important;
+    border: none !important;
+    transition: all 0.3s !important;
+}
+.btn:hover{
+    background-color:#20c997 !important;
+    color:#fff !important;
+    border: none !important;
+
+}

@@ -1,7 +1,7 @@
 body{
-    font-family:serif !important
+    font-family:serif 
 }
-.dani{
+.todo-item{
     height: 100px;
     font-size:24px;
     font-weight: 550;
@@ -12,38 +12,34 @@ body{
     align-items: center;
 } */
 }
-.dani:nth-child(4n+1){
+.todo-item:nth-child(4n+1){
     background: linear-gradient(
         90deg,
-        rgb(196, 215, 27) 0%,
-        rgb(200, 214, 145) 100%
+        #12b886 0%,                           
+        #c3fae8 100%
     );
 }
-.dani:nth-child(4n+2){
+.todo-item:nth-child(4n+2){
     background: linear-gradient(
         90deg,
-        rgb(116, 54, 239) 0%,
-        rgb(160, 72, 214) 100%
+        #38d9a9 0%,
+        #c3fae8 100%
     );
 }
-.dani:nth-child(4n+3){
+.todo-item:nth-child(4n+3){
     background: linear-gradient(
         90deg,
-        rgb(143, 98, 234) 0%,
-        rgb(176, 114, 214) 100%
+        #38d9a9 0%,                            
+        #e6fcf5 100%
     );
 }
-.dani:nth-child(4n+4){
+.todo-item:nth-child(4n+4){
     background: linear-gradient(
         90deg,
-        rgb(141, 95, 233) 0%,
-        rgb(211, 175, 234) 100%
+        #099268 0%,
+        #c3fae8 100%
     );
 }
-.dani2{
-    margin-left: 10px;
+.del{
+    margin-left: 20px;
 }
-/* .padding{
-    padding: 15px;
-    
-} */ 

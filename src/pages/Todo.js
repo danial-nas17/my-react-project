@@ -38,8 +38,8 @@ function Todo() {
                 {error && <div className='text-center text-danger fs-5 mt-5'>{error}</div>}
             
                 {todos && todos.map(todo => (
-                    <div key={todo.id} className="col-md-8 d-flex justify-content-between ali align-items-center  dani">
-                       <div className='dani2'>{todo.completed ? <del style={{color: '#F875AA'}}>{todo.title}</del> : <span>{todo.title}</span>}</div> 
+                    <div key={todo.id} className="col-md-8 d-flex justify-content-between ali align-items-center  todo-item">
+                       <div className='del'>{todo.completed ? <del style={{color: '#c92a2a'}}>{todo.title}</del> : <span>{todo.title}</span>}</div> 
                        <div className="d-flex align-items-center p-2">
                             
                         <UpdateTodo todo={todo}/>
