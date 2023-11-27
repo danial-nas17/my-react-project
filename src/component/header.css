@@ -1,5 +1,5 @@
 #navStyle{
-    background-color: #dd5be3 ;
+    background-color: #e6fcf5 !important ;
     height: 70px;
     
 }
@@ -7,4 +7,10 @@
 .navNav:hover{
 
     color: #fff 
+}
+
+.nav-link:hover{
+
+    color:#099268 !important;
+    
 }
